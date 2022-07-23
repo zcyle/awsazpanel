@@ -2,7 +2,7 @@ docker创建网络
 
 - docker network create cdntip_network
 
-启动mariadb容器
+启动mysql容器
 
 - mkdir /data
 - docker run -d -it --network cdntip_network -v /data/mysql:/var/lib/mysql --name panel_mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=panel mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
